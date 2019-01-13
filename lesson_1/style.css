@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .header {
   width: 1000px;
   height: 200px;
@@ -16,23 +20,28 @@
 }
 .main .block {
   width: 273.33333333px;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  flex-grow: unset;
+  flex-shrink: unset;
   height: 400px;
   margin: 50px 30px;
   outline: 1px solid black;
   text-align: center;
+  align-content: center;
   float: left;
 }
 .main .block .fahrenheit {
   display: block;
-  width: 100%;
 }
 .main .block p {
   display: block;
   width: 100%;
 }
 .main .block input {
-  margin-top: 10px;
+  width: auto;
+  margin: 10px auto;
   text-align: center;
 }
 .main .block span {

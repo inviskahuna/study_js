@@ -17,26 +17,35 @@
     <div class="main">
         <div class="block">
             <p>Конвертер температуры</p>
-            <input class="fahrenheit" type="text" id="inputC" value="Ввести в градусах Цельсия"  />
-            <input type="submit" onclick="convertTemp()" value="Преобразовать в градусы Фаренгейта"/>
+            <input class="fahrenheit" type="text" id="inputC" value="Ввести в градусах Цельсия" />
+            <input type="submit" onclick="convertTemp()" value="Преобразовать в градусы Фаренгейта" />
         </div>
         <div class="block">
             <p>Назначить админа</p>
             <p>Админ сегодня это</p><span id="admin">Василий</span>
-            <input class="name" type="text" id="inputName" value="Имя"  />
-            <input type="submit" onclick="doAdmin()" value="Сделать админом"/>
+            <input class="name" type="text" id="inputName" value="Имя" />
+            <input type="submit" onclick="doAdmin()" value="Сделать админом" />
         </div>
         <div class="block">
             <p>Конкатенация</p>
-            <input class="name" type="text" id="inputVarA" value="Переменная А"  />
-            <input class="name" type="text" id="inputVarB" value="Переменная B"  />
-            <input type="submit" onclick="concatination()" value="Конкатенировать"/>
+            <input class="name" type="text" id="inputVarA" value="Переменная А" />
+            <input class="name" type="text" id="inputVarB" value="Переменная B" />
+            <input type="submit" onclick="concatination()" value="Конкатенировать" />
             <input type="submit" onclick="strongConc()" value="Конкатенировать 1000 и &quot;108&quot;" />
         </div>
         <div class="clr"></div>
     </div>
-    <div class="footer"></div>
-
+    <div class="footer">
+        <h3>Атрибут async</h3>
+        <p>Поддерживается всеми браузерами, кроме IE9-. Скрипт выполняется полностью асинхронно. То есть, при
+            обнаружении &quot;script async src="..."&quot; браузер не останавливает обработку страницы, а спокойно
+            работает дальше. Когда скрипт будет загружен – он выполнится.
+        </p>
+        <h3>Атрибут defer</h3>
+        <p> Поддерживается всеми браузерами, включая самые старые IE. Скрипт также выполняется асинхронно, не
+            заставляет ждать страницу, но есть два отличия от async.
+            Но браузер гарантирует, что относительный порядок скриптов с defer будет сохранён.
+        </p>
+    </div>
 </body>
-
 </html>
