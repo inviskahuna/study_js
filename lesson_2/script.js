@@ -152,9 +152,36 @@ function check_func_with_args() {
 }
 
 function zero_and_null() {
-    let text = "Данный оператор работает именно так для того, чтобы оптимизировать вычисления. " +
-                "Зачем сначала проверять, больше ли x чем y, и, если это не так, проверять, " +
-                "равняется ли значение x значению y, если можно выполнить всего одно сравнение, " +
-                "проверить, меньше ли x чем y, а затем использовать результат этого сравнения " +
-                "для того, чтобы вывести результат исходного выражения."
+    let a = null;
+    let b = 0;
+    let output = "";
+    if (a == b) {
+        output += "null == 0"
+    } else if (a > b) {
+        output += "null > 0"
+    } else if (a >= b) {
+        output += "null >= 0"
+    }
+    let text = " https://habr.com/ru/company/ruvds/blog/337732/"
+    alert(output + " Это связано с тем что JS довольно старый язык и там много legacy кода, который порождает не " +
+        "очевидное поведение в очевидных ситуациях. Короче говоря так работают механизмы сравнения в JS и мы должны" +
+        "принять их такими какие они есть, и читать документацию. Более подробный ответ в статье на хабре -->" + text)
+}
+function pow(x, n) {
+    return n !== 1 ? x * pow(x, n - 1) : x;
+}
+
+
+function check_pow() {
+    let varA = document.getElementById("inputVarA").value;
+    let varB = document.getElementById("inputVarB").value;
+    let verboseA = document.getElementById("varA");
+    let verboseB = document.getElementById("varB");
+    let output = document.getElementById("output");
+    verboseA.innerHTML = varA;
+    verboseB.innerHTML = varB;
+    let a = Number(varA);
+    let n = Number(varB);
+    //setTimeout(pow, 1);
+    output.innerHTML = pow(a, n)
 }
