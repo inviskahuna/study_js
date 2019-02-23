@@ -88,3 +88,73 @@ function fifteens_numbers() {
 
     }
 }
+
+function add(a, b) {
+    return Number(a) + Number(b)
+}
+function sub(a, b) {
+    return Number(a) - Number(b)
+}
+function mul(a, b) {
+    return Number(a) * Number(b)
+}
+function div(a, b) {
+    return Number(a) / Number(b)
+}
+function fifth_grade() {
+    let varA = document.getElementById("inputVarA").value;
+    let varB = document.getElementById("inputVarB").value;
+    let verboseA = document.getElementById("varA");
+    let verboseB = document.getElementById("varB");
+    verboseA.innerHTML = varA;
+    verboseB.innerHTML = varB;
+    let output = document.getElementById("output");
+
+    let a = add(varA, varB);
+    let b = sub(varA, varB);
+    let c = mul(varA, varB);
+    let d = div(varA, varB);
+
+    output.innerHTML = a + "<-ADD" + b + "<-SUB" + c + "<-MUL" + d + "<-DIV";
+}
+
+function mathOperation(arg1, arg2, operation) {
+    let output = document.getElementById("output");
+    switch (operation) {
+        case "ADD":
+            output.innerHTML = add(arg1, arg2);
+            break;
+        case "SUB":
+            output.innerHTML = sub(arg1, arg2);
+            break;
+        case "MUL":
+            output.innerHTML = mul(arg1, arg2);
+            break;
+        case "DIV":
+            output.innerHTML = div(arg1, arg2);
+            break;
+        default:
+            output.innerHTML = "Неправильная операция, введите MUL or SUB or DIV or ADD";
+            break;
+
+    }
+}
+
+function check_func_with_args() {
+    let varA = document.getElementById("inputVarA").value;
+    let varB = document.getElementById("inputVarB").value;
+    let verboseA = document.getElementById("varA");
+    let verboseB = document.getElementById("varB");
+    verboseA.innerHTML = varA;
+    verboseB.innerHTML = varB;
+    let op = prompt("Какую операцию провести с числами A и B");
+    mathOperation(varA, varB, op)
+}
+
+function zero_and_null() {
+    let text = "Данный оператор работает именно так для того, чтобы оптимизировать вычисления. " +
+                "Зачем сначала проверять, больше ли x чем y, и, если это не так, проверять, " +
+                "равняется ли значение x значению y, если можно выполнить всего одно сравнение, " +
+                "проверить, меньше ли x чем y, а затем использовать результат этого сравнения " +
+                "для того, чтобы вывести результат исходного выражения."
+}
