@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Обучение JavaScript</h1>
+    </div>
+    <div class="main">
+        <div class="block">
+            <dl class="QA">
+                <dt>var a = 1, b = 1, c, d; </dt>
+                <br>
+                <dt>c = ++a; alert(c);</dt>
+                <dd>Префиксная форма инкремента. Сначала инкрементируем, потом выводим, поэтому 2</dd>
+                <dt>d = b++; alert(d); </dt>
+                <dd>Постфиксная форма инкремента. Сначала выводим, потом инкрементируем, поэтому 1</dd>
+                <dt>c = (2+ ++a); alert(c);</dt>
+                <dd>Перед сложение a=2, соотв. 2 + (++а) = 5</dd>
+                <dt>d = (2+ b++); alert(d);</dt>
+                <dd>Перед сложение b=2, соотв. 2 + (b++) = 4, ибо b инкрементируется постфиксно</dd>
+                <dt>alert(a);</dt>
+                <dd>Было 2 инкремента. 1+1+1 = 3</dd>
+                <dt>alert(b);</dt>
+                <dd>Было 2 инкремента. 1+1+1 = 3</dd>
+            </dl>
+        </div>
+        <div class="block">
+          <dl class="QA">
+              <dt>var a = 2;
+                  var x = 1 + (a *= 2);</dt>
+              <dd>Классическая сокращённая арифметика с присваиванием. <br> a *= 2 equal a = a*2</dd>
+          </dl>
+        </div>
+        <div class="block">
+            <p>Изучаем функции</p>
+            <input class="name" type="text" id="inputVarA" value="Переменная А" /><span id="varA">A</span>
+            <input class="name" type="text" id="inputVarB" value="Переменная B" /><span id="varB">B</span>
+            <p>Результат</p>
+            <div id="output">C</div>
+            <input type="submit" onclick="varLogic()" value="Выполнить задание 3" />
+            <input type="submit" onclick="concatination()" value="Выполнить задание 4" />
+            <input type="submit" onclick="concatination()" value="Выполнить задание 5" />
+            <input type="submit" onclick="concatination()" value="Выполнить задание 6" />
+            <input type="submit" onclick="concatination()" value="Выполнить задание 7" />
+            <input type="submit" onclick="concatination()" value="Выполнить задание 8" />
+        </div>
+        <div class="clr"></div>
+    </div>
+    <div class="footer">
+
+    </div>
+</body>
+</html>
