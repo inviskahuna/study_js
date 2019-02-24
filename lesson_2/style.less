@@ -1,0 +1,76 @@
+@widthAll: 1000px;
+@colorBack: lightgray;
+.header {
+    width: @widthAll;
+    height: 200px;
+    margin: 0 auto;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.main {
+    width: @widthAll;
+    margin: 0 auto;
+    background-color: navajowhite;
+
+    .block {
+        width: @widthAll / 3 - 60;
+        display: block;
+        min-height: 400px;
+        margin: 50px 30px;
+        outline: 1px solid black;
+        text-align: center;
+        float: left;
+
+        .QA {
+            dt {
+              outline: solid black 1px;
+              background-color: white;
+              color: green;
+              text-align: left;
+              margin-left: 1em;
+              margin-right: 1em;
+            }
+            dd {
+              text-align: left;
+              margin-left: 2em;
+              margin-right: 1em;
+            }
+        }
+
+      #varA, #varB {
+        margin-left: 2em;
+      }
+
+        .fahrenheit {
+            display: block;
+            width: 100%;
+        }
+        p {
+            display: block;
+            
+            width: 100%;
+        }
+        input {
+            margin-top: 10px;
+            text-align: center; 
+        }
+        
+    }
+}
+
+
+.clr {
+    clear: both;
+}
+
+.footer {
+    width: @widthAll;
+    height: 200px;
+    margin: 0 auto;
+    background-color: lightgrey;
+}
