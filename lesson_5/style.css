@@ -1,0 +1,86 @@
+.header {
+  width: 1000px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.main {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: navajowhite;
+}
+.main .block {
+  width: 273.33333333px;
+  display: block;
+  min-height: 400px;
+  margin: 50px 30px;
+  outline: 1px solid black;
+  text-align: center;
+  float: left;
+}
+.main .block .QA dt {
+  outline: solid black 1px;
+  background-color: white;
+  color: green;
+  text-align: left;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.main .block .QA dd {
+  text-align: left;
+  margin-left: 2em;
+  margin-right: 1em;
+}
+.main .block .calc input {
+  display: inline;
+  width: 25px;
+  height: 20px;
+}
+.main .block .calc button {
+  margin-top: 2em;
+  display: inline;
+  width: 25px;
+  height: 25px;
+}
+.main .block #varA,
+.main .block #varB {
+  margin-left: 2em;
+}
+.main .block .fahrenheit {
+  display: block;
+  width: 100%;
+}
+.main .block p {
+  display: block;
+  width: 100%;
+}
+.main .block input {
+  margin-top: 10px;
+  text-align: center;
+}
+#mainChessBoard {
+  width: 160px;
+  height: 160px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+#mainChessBoard div {
+  width: 20px;
+  height: 20px;
+  float: left;
+}
+.clr {
+  clear: both;
+}
+.footer {
+  width: 1000px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: lightgrey;
+}
+/*# sourceMappingURL=style.css.map */
