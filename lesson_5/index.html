@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Обучение JavaScript</h1>
+    </div>
+    <div class="main">
+        <div class="block">
+            <p>Задание 1</p>
+            <p>Кнопка меняющая текст</p>
+            <input type="submit" onclick="helloText()" value="Выполнить задание 1"/>
+            <p id="textOut">Hello</p>
+
+        </div>
+        <div class="block">
+            <p>Задание 2</p>
+            <p>Заполнение UL</p>
+            <h2>Заголовок.</h2>
+            <ul id="textUl">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <input type="submit" onclick="fillList();" value="Выполнить задание 2"/>
+        </div>
+        <div class="block">
+            <p>Задание 3</p>
+            <p>Калькулятор</p>
+            <div class="calc">
+                <input type="text" id="varA"> <span>?</span>
+                <input type="text" id="varB"> = <span id="result">результат</span><br>
+                <button onclick="calc('sum');">+</button>
+                <button onclick="calc('sub');">-</button>
+                <button onclick="calc('mul');">*</button>
+                <button onclick="calc('div');">/</button>
+            </div>
+        </div>
+        <div class="block">
+            <p>Задание 4</p>
+            <p>Вставить до</p>
+            <ul>
+                <li id="list">LIST</li>
+            </ul>
+            <input type="submit" onclick="insBef()" value="Выполнить задание 4"/>
+            <div id="output1">Вывод</div>
+        </div>
+        <div class="block">
+            <p>Задание 5</p>
+            <p>Сделать шахматную доску</p>
+            <input type="submit" onclick="simpleChess()" value="Выполнить задание 2"/>
+            <div id="output2">Вывод</div>
+            <div id="mainChessBoard">
+            </div>
+        </div>
+        <div class="clr"></div>
+    </div>
+    <div class="footer">
+
+    </div>
+</body>
+</html>
