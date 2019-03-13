@@ -4,6 +4,7 @@ let canvas = doc.getElementById('canv');
 let ctx = canvas.getContext('2d');
 let xCoord = doc.getElementById('xCoord');
 let yCoord = doc.getElementById('yCoord');
+let timeSpan = document.getElementById('timeSpan');
 let tools = ['brush', 'rectangle'];
 let activeTool = '';
 
@@ -16,8 +17,21 @@ let system = {
     height: canvas.getAttribute('height'),
     currentColor: newColor.value,
     currentTool: '',
-    brushSize : size.value
+    brushSize : size.value,
+    startupTime :new Date().getTime()
+
 };
+
+
+window.onload = function(){
+    (function(){
+        let date = new Date();
+        timeSpan.innerHTML = date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
+        window.setTimeout(arguments.callee, 1000);
+    })();
+};
+
+
 
 //рендер Системы
 let renderSystem = function (obj, elem, action) {
