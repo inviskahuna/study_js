@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'Shadows Into Light';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Shadows Into Light'), local('ShadowsIntoLight'), url(https://fonts.gstatic.com/s/shadowsintolight/v8/UqyNK9UOIntux_czAvDQx_ZcHqZXBNQzdcD8.ttf) format('truetype');
+}
+.header {
+  width: 1000px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.main {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: navajowhite;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-items: center;
+  justify-content: center;
+}
+.main .canv {
+  background-color: white;
+  width: 500px;
+  display: block;
+  min-height: 600px;
+  margin-top: 50px;
+  outline: 4px solid lightgray;
+  text-align: center;
+}
+.main .control {
+  background-color: #E5C79B;
+  width: 333.33333333px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-items: center;
+  min-height: 600px;
+  margin-top: 50px;
+  text-align: center;
+  outline: 4px solid lightgray;
+}
+.main .control p {
+  margin: 0 0;
+  font-size: 2em;
+  font-family: 'Shadows Into Light', cursive;
+}
+.main .control .toolButton,
+.main .control select {
+  margin-left: 2em;
+  width: 100px;
+}
+.main .control .inputs {
+  display: block;
+}
+.main .control .inputs input {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+}
+.main .control .inputs #blue {
+  background-color: blue;
+}
+.main .control .inputs #red {
+  background-color: red;
+}
+.main .control .inputs #yellow {
+  background-color: yellow;
+}
+.main .control .inputs #green {
+  background-color: green;
+}
+.main .coordinates {
+  width: 100%;
+  text-align: center;
+}
+.clr {
+  clear: both;
+}
+.footer {
+  width: 1000px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: lightgrey;
+}
+/*# sourceMappingURL=style.css.map */

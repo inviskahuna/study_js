@@ -1,0 +1,98 @@
+@widthAll: 1000px;
+@colorBack: lightgray;
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+.header {
+    width: @widthAll;
+    height: 200px;
+    margin: 0 auto;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.main {
+    width: @widthAll;
+    margin: 0 auto;
+    background-color: navajowhite;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-items: center;
+    justify-content: center;
+
+    .canv {
+        background-color: white;
+        width: @widthAll/2;
+        display: block;
+        min-height: 600px;
+        margin-top: 50px;
+        outline: 4px solid lightgray;
+        text-align: center;
+      canv {
+
+      }
+    }
+    .control {
+        background-color: #E5C79B;
+        width: @widthAll/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        justify-items: center;
+        min-height: 600px;
+        margin-top: 50px;
+        text-align: center;
+        outline: 4px solid lightgray;
+      p {
+        margin: 0 0;
+        font-size: 2em;
+        font-family: 'Shadows Into Light', cursive;
+      }
+        .toolButton, select {
+          margin-left: 2em;
+          width: 100px;
+
+        }
+        .inputs {
+          display: block;
+          input {
+            display: inline-flex;
+            width: 30px;
+            height: 30px;
+          }
+          #blue {
+            background-color: blue;
+          }
+          #red {
+            background-color: red;
+          }
+          #yellow {
+            background-color: yellow;
+          }
+          #green {
+            background-color: green;
+          }
+        }
+
+    }
+    .coordinates {
+      width: 100%;
+      text-align: center;
+    }
+}
+
+
+.clr {
+    clear: both;
+}
+
+.footer {
+    width: @widthAll;
+    height: 200px;
+    margin: 0 auto;
+    background-color: lightgrey;
+}

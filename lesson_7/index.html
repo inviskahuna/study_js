@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Обучение JavaScript</h1>
+    </div>
+    <div class="main">
+        <div class="canv">
+            <canvas id="canv" width="500px" height="600px"></canvas>
+        </div>
+        <div class="control">
+            <p>Paint control system</p>
+            <button class="toolButton" id='brush'>Brush</button>
+            <button class="toolButton" id='erase'>erase</button>
+            <button class="toolButton" id='airbrush'>airbrush</button>
+            <select id='sizeSelect'>
+                <option>5</option>
+                <option>10</option>
+                <option>15</option>
+                <option>20</option>
+            </select>
+            <p>Available colors:</p>
+            <div class="inputs">
+            <input type="button" id="red">
+            <input type="button" id="blue">
+            <input type="button" id="green">
+            <input type="button" id="yellow">
+            </div>
+
+        </div>
+        <div class="coordinates">
+            <p id="x"><b>x: </b> <span id="xCoord"></span></p>
+            <p id="y"><b>y: </b> <span id="yCoord"></span></p>
+        </div>
+
+
+        <div class="clr"></div>
+    </div>
+    <div class="footer">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
